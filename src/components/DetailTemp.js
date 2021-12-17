@@ -5,13 +5,14 @@ const DetailTemp = (props) => {
         <article className='SideTemp'>
             <img src={props.img} alt={props.name} />
             <div>
-                <h2>{props.title}BeerName</h2>
-                <p>{props.creator}Created by: Damn good Brewers</p>
+                <h2>{props.name}</h2>
+                <p>{props.title}</p>
+                <p>Created by:{props.creator} </p>
                 <div>
-                    <p>first Brewed:{props.brewed} </p>
+                    <p>first brewed:{props.brewed} </p>
                     <p>Attentuiation level:{props.acidlevel}</p>
                 </div>
-                <p>{props.description}superduper delicious beer with hints of american oak and cherryblossoms..Some other crazy stuff.</p>
+                <p>{props.description}</p>
                 <div>
                     <img src='/public/img/Back.svg' alt='back' />
                 </div>

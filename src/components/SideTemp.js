@@ -3,9 +3,10 @@ const SideTemp = (props) => {
         <article className='SideTemp'>
             <img src={props.img} alt={props.name} />
             <div>
-                <h2>{props.title}Beer</h2>
-                <p>{props.description}superduper delicious beer with hints of american oak and cherryblossoms</p>
-                <p>{props.creator}Created by: Damn good Brewers</p>
+                <h2>{props.name}</h2>
+                <p>{props.title}</p>
+                <p>Created by: {props.creator}</p>
+
                 <button>Details</button>
             </div>
         </article>

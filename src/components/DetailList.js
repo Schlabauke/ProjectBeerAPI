@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NavTemp from './components/NavTemp';
-import SideTemp from './components/SideTemp';
+import DetailTemp from './DetailTemp';
+import NavTemp from './NavTemp';
 
-
-class SideList extends Component {
+/* hier brauch ich nur ein Template, dass angezeigt wird. Das stimmt so nicht */
+class DetailList extends Component {
     state = {
         favBeer: []
     }
@@ -16,19 +16,21 @@ class SideList extends Component {
     render() {
         return (
             <section>
-                {this.state.favBeer.map((e, i) => <SideTemp
+                {this.state.favBeer.map((e, i) => <DetailTemp
                     key={i}
                     img={e.image_url}
                     name={e.name}
                     title={e.tagline}
                     creator={e.contributed_by}
+                    description={e.description}
+                    brewed={e.first_brewed}
+                    acidlevel={e.attenuation_level}
                 />)}
                 <NavTemp />
             </section>
-
 
         );
     }
 }
 
-export default SideList;
+export default DetailList;
