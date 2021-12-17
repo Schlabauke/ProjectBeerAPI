@@ -1,0 +1,25 @@
+body {
+  width: 415px;
+}
+.MainTemp {
+  border: 2px solid black;
+  margin: 5vh 0 0 5vw;
+  padding: 0.8em;
+  .MainArticle {
+    margin-bottom: 5vh;
+    img {
+      width: 99.9%;
+    }
+    h2 {
+      background-color: #ffca41;
+      color: whitesmoke;
+      padding: 10px 0;
+      margin: -3px 0;
+    }
+  }
+}
+.NavLogo {
+  text-align: center;
+  background-color: #ffca41;
+  padding: 0.8em;
+}
