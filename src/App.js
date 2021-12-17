@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainTemp from './components/MainTemp';
 import SideList from './SideList';
-import DetailList from './components/DetailList';
-import RandomTemp from './components/RandomTemp';
+
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +18,7 @@ class App extends Component {
           <Routes>
             <Route path='/' element={<MainTemp />} />
             <Route path='/SideList' element={<SideList />} />
-            <Route path='/RandomTemp' element={<RandomTemp />} />
+            {/*   <Route path='/SideList/:id' element={<DetailTemp />} /> */}
           </Routes>
 
         </BrowserRouter>

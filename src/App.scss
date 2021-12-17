@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap");
 body {
   width: 415px;
+  font-family: "Roboto Slab", serif;
 }
 .MainTemp {
   border: 2px solid black;
@@ -24,8 +26,16 @@ body {
   padding: 0.8em;
 }
 .SideTemp {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #333333;
+  margin: 5vh 0 0 5vw;
   img {
-    width: 50%;
+    width: 25%;
+  }
+  div {
+    align-self: center;
+    align-items: center;
+    padding-left: 2em;
   }
 }

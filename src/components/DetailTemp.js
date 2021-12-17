@@ -1,10 +1,12 @@
 import NavTemp from "./NavTemp";
+
 const DetailTemp = (props) => {
+
     return (
 
-        <article className='SideTemp'>
+        <section className='DetailTemp'>
             <img src={props.img} alt={props.name} />
-            <div>
+            <article>
                 <h2>{props.name}</h2>
                 <p>{props.title}</p>
                 <p>Created by:{props.creator} </p>
@@ -13,13 +15,13 @@ const DetailTemp = (props) => {
                     <p>Attentuiation level:{props.acidlevel}</p>
                 </div>
                 <p>{props.description}</p>
-                <div>
+                <div className='Back'>
                     <img src='/public/img/Back.svg' alt='back' />
                 </div>
-            </div>
+            </article>
+            useparams details-button verlinken
             <NavTemp />
-        </article>
-
+        </section>
     );
 }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DetailTemp from './DetailTemp';
 import NavTemp from './NavTemp';
 
-/* hier brauch ich nur ein Template, dass angezeigt wird. Das stimmt so nicht */
+
 class DetailList extends Component {
     state = {
         favBeer: []
@@ -16,19 +16,17 @@ class DetailList extends Component {
     render() {
         return (
             <section>
-                {this.state.favBeer.map((e, i) => <DetailTemp
-                    key={i}
-                    img={e.image_url}
-                    name={e.name}
-                    title={e.tagline}
-                    creator={e.contributed_by}
-                    description={e.description}
-                    brewed={e.first_brewed}
-                    acidlevel={e.attenuation_level}
-                />)}
+                <DetailTemp
+                    img={favBeer[0].image_url}
+                    name={favBeer[0].name}
+                    title={favBeer[0].tagline}
+                    creator={favBeer.contributed_by}
+                    description={favBeer[0].description}
+                    brewed={favBeer[0].first_brewed}
+                    acidlevel={favBeer[0].attenuation_level}
+                />
                 <NavTemp />
             </section>
-
         );
     }
 }
